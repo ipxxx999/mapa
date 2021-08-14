@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	
+
+		  <!-----  ----->
+
+	<meta charset="utf-8" />
+
+
+
+                 <title>Peliculas Mapa</title>
+
+
+		  <meta http-equiv="x-ua-compatible" content="ie=edge">
+		  <meta http-equiv="cleartype" content="on">
+		  <meta name="HandheldFriendly" content="True">
+		  <meta name="author" content="Elio Equipo">
+		  <meta name="apple-itunes-app" content="app-id=">
+		  <meta name="description" content="Peli Mapa del Mundo, creado por gente como tú Peliculas Mapa">
+  
+	          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		  <!-- Para meta envios compartir modificalo a tu gusto y comparte en telegram veras resultados -->
+		  <meta property="og:site_name" content="http://peliculas.audiolatinocr.com/">
+                  <meta property="og:image" content="http://peliculas.audiolatinocr.com/botones/mapas/img/osm_logo.png" />
+                  <meta property="og:image:secure_url" content="http://peliculas.audiolatinocr.com/botones/mapas/img/osm_logo_secure.png" />
+
+
+		  <meta property="og:image:type" content="image/png" />
+		  <meta property="og:image:type" content="image/jpeg" />
+                  <meta property="og:image:width" content="256" />
+                  <meta property="og:image:height" content="256" />
+		  <meta property="og:type" content="video.movie" />
+		  <meta property="og:title" content="Peliculas Mapa">
+		  <meta property="og:description" content="Peli_Mapa del Mundo, creado por gente como tú">
+		  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+		  <!-- Fin Para Para envios compartir meta -->
+
+
+		  <!--Para Tamanos cell Tv Tablet -->
+		  <link rel="icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/32x32.png" />
+		  <link href="http://peliculas.audiolatinocr.com/static/assets/css-wide.css" type="text/css" rel="stylesheet" media="all">
+		  <link href="http://peliculas.audiolatinocr.com/static/assets/css-tablet.css" type="text/css" rel="stylesheet" media="all">
+		  <link href="http://peliculas.audiolatinocr.com/static/assets/css-mobile480.css" type="text/css" rel="stylesheet" media="all">
+		  <!--Para Tamanos cell Tv Tablet -->
+
+
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/57x57.png" sizes="57x57" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/60x60.png" sizes="60x60" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/72x72.png" sizes="72x72" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/76x76.png" sizes="76x76" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/114x114.png" sizes="114x114" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/120x120.png" sizes="120x120" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/144x144.png" sizes="144x144" />		  
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/152x152.png" sizes="152x152" />
+		  <link rel="apple-touch-icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/180x180.png" sizes="180x180" />
+		  <link rel="icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/32x32.png" sizes="32x32" />
+		  <link rel="icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/194x194.png" sizes="194x194" />
+		  <link rel="icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/96x96.png" sizes="96x96" />
+		  <link rel="icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/192x192.png" sizes="192x192" />
+		  <link rel="icon" type="image/png" href="http://peliculas.audiolatinocr.com/botones/mapas/img/16x16.png" sizes="16x16" />
+   
+
+
+
+
+        <link rel="stylesheet" href="./css/leaflet.css"/>
+        <script src="./js/leaflet.js"></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 600px;
+			height: 400px;
+		}
+	</style>
+
+	
+
+
+<style>
+
+@charset "UTF-8";
+
+body { padding: 0; margin: 0; 
+} #mapa { height: 100%; width: 100vw; }
+
+
+}
+
+main canvas#grafico{
+    background:#111;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+<img src="./images/marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(746px, 334px, 0px); z-index: 334;">
+
+<div id='mapa'></div>
+
+
+<!-- Para mapas -->
+<!-- tipos de mapas ---- navigation-day-v1 -->
+<!-- tipos de mapas ---- navigation-night-v1 -->
+<!-- tipos de mapas ---- outdoors-v11 -->
+<!-- tipos de mapas ---- dark-v10 -->
+<!-- tipos de mapas ---- satellite-v9 -->
+<!-- tipos de mapas ---- satellite-streets-v11 -->
+
+<script>
+
+     var mymapa = L.map('mapa').setView([18.216667, 42.5], 2);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { attribution: 'Map data &copy; <a href="http://google.com">Google</a> Amigos, <a href="https://www.appcreator24.com/app1605539">Descarga, Creator24</a> © <a href="https://telegram.org/">TG</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymapa);
+var icon = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon2 = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon3 = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon4 = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon5 = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon6 = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon7 = L.icon({
+                    iconUrl: "./images/imagen-chica-1.png",
+                    iconSize:     [60, 60], 
+                    });
+var icon8 = L.icon({
+                    iconUrl: "./images/leaf-green.png",
+                    iconSize:     [38, 95], 
+                    });
+
+    L.control.scale().addTo(mymapa);
+    L.marker([42.331667, -83.0475],{icon: icon6}).addTo(mymapa).bindPopup("<b>HOLA</b>. AMIGO </p>Ver Peliculas - USA.");
+
+    L.marker([18.735693, -70.162651],{icon: icon3}).addTo(mymapa).bindPopup("<b>HOLA AMIGO</b>. Clic en Peliculas. - Republica Dominicana.").openPopup();
+
+    L.marker([45.631999969482, -73.58390045166],{icon: icon6}).addTo(mymapa).bindPopup("<b>No Mas Censura</b>. Vancouver - Canada.");
+
+    L.marker([-35.675147, -71.542969],{icon: icon7}).addTo(mymapa).bindPopup("<b>Sombas tenebrosas</b>. Tu Ciudad - Chile. ");
+
+    L.marker([55.95, -3.198889],{icon: icon5}).addTo(mymapa).bindPopup("<b>Mi pequeno vampiro</b>. Edimburgo - Escocia.");
+
+    L.marker([-35.31497, 149.10728],{icon: icon8}).addTo(mymapa).bindPopup("<b>Sombas tenebrosas</b>. Club - Australia. ");
+
+
+	L.marker([18.735693, -70.162651]).addTo(mymapa)
+		.bindPopup("<b>Hola Jordan!</b><br/>Soy Nuevo.</p> En el Grupo").openPopup();
+
+
+    L.circle([50.45388, -104.63808], 500, {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(mymapa).bindPopup("Pasgua Hospital Canada.");
+
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymapa).bindPopup("I am a polygon.");
+
+
+
+mymapa.on('click', onMapClick);
+
+</script>
+
+
+    </body>
+</html>
+
