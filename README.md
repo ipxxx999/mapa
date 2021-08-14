@@ -1,6 +1,5 @@
 # mapa
-
-Mapa Interativo Modificable Para Tu sitio Web
+ Mapa Interativo Modificable Para Tu sitio Web
 
 Este es un sistema de Mapa. 
 
@@ -14,7 +13,7 @@ Ver ejemplo http://copen.atspace.tv/index2.php
 <p><strong>Importante</strong>: </p>
 </blockquote>
 <p>Utilice <em>El Mapa</em>, para tu servicio.</p>
-<p><h2 id="permitir-aplicaciones-menos-seguras-">Puede utilizar este Mapa, de contacto</h2> Puede Encontrar Mapa Aqu&#237; <a href="https://github.com/ipxxx999/User_Login" target="_blank">User Login</a> exclusivo:</p>
+<p><h2 id="permitir-aplicaciones-menos-seguras-">Puede utilizar este Mapa, de contacto</h2> Puede Descargar el Mapa Aqu&#237; <a href="https://github.com/ipxxx999/mapa/archive/refs/heads/main.zip" target="_blank">User Login</a> exclusivo:</p>
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/ipxxx999/mapa/main/mapa.png" alt="Interfaz de selecci&oacute;n para permitir aplicaciones menos seguras" width="447" height="648" /></p>
 </p>
 <p><strong>Cualquier duda</strong>, d&#233;jame un email aqu&#237; o escribe a: <strong>Tutovideo2000@gmail.com</strong></p>
